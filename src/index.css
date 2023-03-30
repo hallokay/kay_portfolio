@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css?family=Gugi:400");
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+:root {
+  --first-color: hsl(353, 100%, 65%);
+  --title-color: hsl(244, 24%, 26%);
+  --text-color: hsl(244, 16%, 43%);
+  --body-color: hsl(258, 60%, 98%);
+  --container-color: #fff;
+
+  /* typo */
+  --h1-font:"Gugi", "Noto Sans", sans-serif;
+  --body-font: "Nanum Gothic", "Noto Sans", sans-serif;
+  --h1-size: 2.25rem;
+  --h2-size: 1.5rem;
+  --h3-size: 1.25rem;
+  --normal-size: 1rem;
+  --small-size: 0.875rem;
+  --smaller-size: 0.813rem;
+
+  --font-medium: 500;
+  --font-semibold: 600;
+  --font-bold: 700;
+
+  --shadow: 0px 5px 20px 0px rgb(69 67 96 / 10%);
+
+  --border-radius: 20px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body, button, input, textarea {
+    font-family: var(--body-font);
+    font-size: var(--normal-size);
+}
+
+body {
+    background: var(--body-color);
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+h1, h2, h3 {
+    color: var(--title-color);
+    font-weight: var(--font-semibold);
+    line-height: 1.2;
+
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+
+}
+main {
+    margin-left: 110px;
+}
+
+

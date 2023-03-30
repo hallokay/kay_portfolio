@@ -1,7 +1,11 @@
 import Layout from "./Layout";
-import Header from "./Header";
+import Sidebar from "./Sidebar";
 import Footer from "./Footer";
 import Login from "./Login";
-import Home from "./Home";
+import Portfolio from "./Portfolio";
 
-export {Layout, Header, Footer, Login, Home };
+
+
+
+
+export { Layout, Sidebar, Footer, Login, Portfolio };
