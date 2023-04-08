@@ -14,7 +14,7 @@ const Section = styled.section`
 
 const SectionTitle = styled.h2`
   position: relative;
-  font-size: var(--h1-font);
+  font-size: var(--h2-size);
   margin-left: 0.875rem;
   margin-bottom: 3.75rem;
   font-weight: var(--font-bold);
