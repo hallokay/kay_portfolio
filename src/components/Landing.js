@@ -2,15 +2,15 @@ import React from 'react'
 import styled from 'styled-components'
 import { Container } from '../commonCss'
 import { ScrollDown, Bg } from "./index";
-
+import { mainImg, mainVideo, socialLink } from "../constants/constants";
 const Landing = () => {
   return (
     <LandingContainer id="home">
       <div>
         <ImgWrap>
-          <img src="/assets/img/img_main.jpg" alt="메인이미지" />
+          <img src={mainImg} alt="메인이미지" />
           <video autoPlay loop playsInline muted>
-            <source src="/assets/img/video_main.mp4" type="video/mp4" />
+            <source src={mainVideo} type="video/mp4" />
           </video>
         </ImgWrap>
         <Title>전진희</Title>
@@ -18,12 +18,20 @@ const Landing = () => {
           <span>프론트엔드 개발자</span>
           입니다.
         </Desc>
-
+        <HeaderSocial>
+          {socialLink.map((item, i) => (
+            <li key={i}>
+               <a href={item.url} target="_blank">
+                <i className={item.icon}></i>
+              </a>
+            </li>
+          ))}
+        </HeaderSocial>
         <ScrollDown />
       </div>
-      <Bg/>
-    </LandingContainer>
 
+      <Bg />
+    </LandingContainer>
   );
 }
 const LandingContainer = styled(Container)`
@@ -96,4 +104,11 @@ const Desc = styled.span`
 
   }
 `;
+
+const HeaderSocial = styled.ul`
+  i {
+    width: 30px:
+    font-size: 25px;
+  }
+`
 export default Landing
