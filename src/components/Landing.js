@@ -3,7 +3,9 @@ import styled from 'styled-components'
 import { Container } from '../commonCss'
 import { ScrollDown, Bg } from "./index";
 import { mainImg, mainVideo, socialLink } from "../constants/constants";
+
 const Landing = () => {
+
   return (
     <LandingContainer id="home">
       <div>
@@ -21,8 +23,11 @@ const Landing = () => {
         <HeaderSocial>
           {socialLink.map((item, i) => (
             <li key={i}>
-               <a href={item.url} target="_blank">
-                <i className={item.icon}></i>
+              <a href={item.url} target="_blank">
+                {item.icon}
+                <span>
+                  {item.name}
+                </span>
               </a>
             </li>
           ))}
@@ -97,18 +102,22 @@ const Title = styled.h1`
   color: var(--title-color);
   letter-spacing: .5rem;
 `;
-const Desc = styled.span`
+const Desc = styled.p`
+  font-size: 1rem;
+
   span {
     display: inline-block;
     font-weight: bold;
-
+  }
+  i {
   }
 `;
 
 const HeaderSocial = styled.ul`
-  i {
-    width: 30px:
-    font-size: 25px;
+
+  span {
+    font-size: 12px;
+    margin-left: 5px;
   }
 `
 export default Landing

@@ -2,8 +2,8 @@ import styled from "styled-components";
 
 const Container = styled.section`
   max-width: 1080px;
-  margin: 0 auto;
-  padding: 0 15px;
+  margin: 20px auto;
+  padding: 30px 15px;
 `;
 const Grid = styled.div`
     display: grid;

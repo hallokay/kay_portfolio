@@ -1,14 +1,19 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, SectionTitle, Grid } from "../commonCss";
+
 import { aboutMe } from "../constants/constants";
+ 
 
 const About = () => {
+  
   return (
-    <AboutContainer id="about">
-      <SectionTitle>About Me</SectionTitle>
+    <Container id="about">
+      <SectionTitle>소개</SectionTitle>
       <AboutGrid>
-        <img src="./assets/img/img_main.jpg" alt="이미지" />
+        <div className="imgwrap">
+          <img src="./assets/img/img_main.jpg" alt="이미지" />
+        </div>
         <AboutInfo>
           {aboutMe}
           {/* 다운로드 버튼 만들기 */}
@@ -16,19 +21,30 @@ const About = () => {
             <a href="/">다운로드</a>
           </button>
           {/* <a href="" download={}></a> */}
-          </AboutInfo>
+        </AboutInfo>
       </AboutGrid>
 
-    </AboutContainer>
+    </Container>
   );
 };
 
-const AboutContainer = styled(Container)`
 
-`;
 const AboutGrid = styled(Grid)`
   grid-template-columns: 3fr 9fr;
-  column-gap: 1.875rem;
+  column-gap: 2rem;
+
+  .imgwrap {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    img {
+      object-fit: cover;
+    }
+  }
 `;
 const AboutInfo = styled(Grid)`
   position: relative;
@@ -40,7 +56,7 @@ const AboutInfo = styled(Grid)`
   :before {
     position: absolute;
     left: -0.9rem;
-    top: 20%;
+    top: 15%;
     content: "";
     width: 0;
     height: 0;

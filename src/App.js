@@ -1,6 +1,7 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Layout, Login, Portfolio } from "./Layout";
+import { Layout, Login, Page } from "./Layout";
+// import { Landing, About, Projects,Resume } from './components/index'
 
 function App() {
   return (
@@ -10,7 +11,9 @@ function App() {
         {/* <Route path="/" index element={<Login />} /> */}
 
         {/* 로그인 */}
-        <Route path="/" element={<Portfolio />} />
+        <Route path="/" element={<Page />}>
+          
+        </Route>
       </Route>
     </Routes>
   );
