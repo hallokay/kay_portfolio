@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { navItems } from '../constants/constants'
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 const Sidebar = () => {
   return (
     <Aside>
@@ -14,11 +14,12 @@ const Sidebar = () => {
           <NavList>
             {navItems.map((item, i) => (
               <li key={i}>
-                <Link to={item.to}>
+                <a href={item.to}>
                   <i className={item.icon} />
                   {/* {item.name} */}
-                </Link>
+                </a>
               </li>
+        
             ))}
           </NavList>
         </NavMenu>

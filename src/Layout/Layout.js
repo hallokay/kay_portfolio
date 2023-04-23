@@ -1,12 +1,13 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import { Sidebar } from "./index";
+import { Sidebar, Footer } from "./index";
 
 const Layout = () => {
   return (
     <>
       <Sidebar />
       <Outlet />
+      <Footer />
     </>
   );
 };

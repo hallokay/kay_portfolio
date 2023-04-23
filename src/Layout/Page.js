@@ -1,6 +1,7 @@
-import { Landing, About, Projects,Resume } from '../components/index'
+import { Landing, About, Projects, Resume } from "../components/index";
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
+import {Footer} from './index'
 
 const Page = () => {
 
@@ -27,6 +28,7 @@ const Page = () => {
       <About />
       <Resume />
       <Projects />
+      {/* <Footer/> */}
     </main>
   );
 };
