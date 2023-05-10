@@ -6,7 +6,11 @@ const Card = ({ data }) => {
     <TimelineItem>
       <i className={data.icon} />
       <span>{data.year}</span>
-      <h3 className="title">{data.title}</h3>
+      <h3 className="title">
+        {data.title}
+        <span>{data?.company}</span>
+      </h3>
+
       <p>{data.desc}</p>
     </TimelineItem>
   );
@@ -24,7 +28,7 @@ const TimelineItem = styled.div`
     background: var(--container-color);
     padding: 0.4375rem 0;
   }
-  :before {
+  &::before {
     position: absolute;
     left: 0.25rem;
     content: "";
@@ -37,9 +41,17 @@ const TimelineItem = styled.div`
     color: #8b88b1;
     font-size: var(--small-size);
   }
-  title {
-    font-size: var(--h3-size);
+
+  p{ 
     margin: .5rem 0;
+  }
+  .title {
+    font-size: var(--h3-size);
+    margin: .5rem 0 2rem;
+
+    span {
+      margin-left: 5px;
+    }
   }
 `;
 export default Card;

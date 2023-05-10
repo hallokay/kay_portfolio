@@ -18,12 +18,15 @@ const About = () => {
           {aboutMe}
           {/* 다운로드 버튼 만들기 */}
           <button>
-            <a href="/">다운로드</a>
+            <a
+              target="_blank"
+              href="https://glass-possum-fe9.notion.site/036f235f83904a319ceadae3eb812365"
+            >
+              이력서 보기
+            </a>
           </button>
-          {/* <a href="" download={}></a> */}
         </AboutInfo>
       </AboutGrid>
-
     </Container>
   );
 };
