@@ -16,10 +16,11 @@ const Projects = () => {
         {projects.map((elem)=> {
           const { id, img, title, url, desc, code } = elem;
           return (
-            <div className="card" key={id}>
+            <Card key={id}>
               <a href={url} className="thumnail">
                 <img src={img} alt={title} />
               </a>
+              <div className="info">
               <h3 className="title">{title}</h3>
               <p>{desc}</p>
               <div className="link">
@@ -29,8 +30,10 @@ const Projects = () => {
                 <a href={code} target="_blank">
                   <FontAwesomeIcon icon={faGithub} />
                 </a>
+
               </div>
-            </div>
+              </div>
+            </Card>
           );
         })}
         </ProjectsGrid>
@@ -38,16 +41,17 @@ const Projects = () => {
   );
 };
 const ProjectsGrid = styled(Grid)`
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1fr);
   gap: 1.875rem;
 
-  .card {
-    position: relative;
-    overflow: hidden;
-    border-radius: var(--border-radius);
-    box-shadow: var(--shadow);
-    padding: 10px 20px;
-  }
+`;
+const Card = styled(Grid)`
+  position: relative;
+  overflow: hidden;
+  grid-template-columns: repeat(1fr);
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  padding: 10px 20px;
 
   .title {
     font-size: var(--h3-size);
@@ -57,10 +61,8 @@ const ProjectsGrid = styled(Grid)`
     padding: 5px;
     font-size: 25px;
   }
-
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
 `;
-
 export default Projects;

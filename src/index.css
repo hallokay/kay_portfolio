@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
 :root {
   --first-color: hsl(353, 100%, 65%);
+    --first-color--alt: hsl(353, 78%, 42%);
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);

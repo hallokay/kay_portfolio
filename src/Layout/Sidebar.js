@@ -5,10 +5,10 @@ import { navItems } from '../constants/constants'
 const Sidebar = () => {
   return (
     <Aside>
-      <Logo>
+      {/* <Logo>
         <img src="" alt="" />
         logo
-      </Logo>
+      </Logo> */}
       <Nav>
         <NavMenu>
           <NavList>
@@ -40,12 +40,15 @@ const Aside = styled.aside`
   min-height: 100vh;
   background: var(--body-color);
   border-right: 1px solid rgba(0, 0, 0, 0.05);
-  padding: 0 1.5rem;
+  padding: 2.5rem 1.5rem;
   z-index: 10;
 `;
 const Logo = styled.a``;
 
-const Nav = styled.nav``;
+const Nav = styled.nav`
+  justify-self: center;
+  align-self: center;
+`;
 const NavMenu = styled.div``;
 const NavList = styled.ul`
 display: flex;

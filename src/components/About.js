@@ -16,7 +16,6 @@ const About = () => {
         </div>
         <AboutInfo>
           {aboutMe}
-          {/* 다운로드 버튼 만들기 */}
           <button>
             <a
               target="_blank"
@@ -81,6 +80,9 @@ const AboutInfo = styled(Grid)`
     a {
       color: #fff;
       font-weight: var(--font-bold);
+    }
+    &:hover {
+      background: var(--first-color--alt);
     }
   }
 `;
