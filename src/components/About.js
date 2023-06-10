@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, SectionTitle, Grid } from "../commonCss";
-import Marquee from "react-fast-marquee";
-
+import { Container, Grid } from "../commonCss";
 import { aboutMe } from "../constants/constants";
 
 

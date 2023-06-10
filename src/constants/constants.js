@@ -152,15 +152,15 @@ export const projects = [
         </h4>
         <ul>
           <li>
-            <a href="https://velog.io/@greenbean/netflix-clone-movieSlice-%EC%BD%94%EB%93%9C-%EA%B0%9C%EC%84%A0-%EC%84%A4%EB%AA%85">netflix movieSlice 코드 개선</a>
+            <a href="https://velog.io/@greenbean/netflix-clone-movieSlice-%EC%BD%94%EB%93%9C-%EA%B0%9C%EC%84%A0-%EC%84%A4%EB%AA%85" target="_blank" rel="noopener">netflix movieSlice 코드 개선</a>
 
           </li>
           <li>
-            <a href="https://velog.io/@greenbean/netflix-clone-main-page-%EC%BD%94%EB%93%9C-%EA%B0%9C%EC%84%A0">main page 코드 개선</a>
+            <a href="https://velog.io/@greenbean/netflix-clone-main-page-%EC%BD%94%EB%93%9C-%EA%B0%9C%EC%84%A0" target="_blank" rel="noopener">main page 코드 개선</a>
 
           </li>
           <li>
-            <a href="https://velog.io/@greenbean/netflix-clone-%ED%9A%8C%EA%B3%A0">문제 해결과 회고</a>
+            <a href="https://velog.io/@greenbean/netflix-clone-%ED%9A%8C%EA%B3%A0" target="_blank" rel="noopener">문제 해결과 회고</a>
 
           </li>
         </ul>
@@ -202,11 +202,11 @@ export const projects = [
 
           <ul>
             <li>
-              <a href="https://velog.io/@greenbean/react%EC%97%90%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EB%B0%9B%EC%95%84%EC%98%AC-%EB%95%8C-.Optional-Chaining.-%EB%AC%B8%EB%B2%95-feat.-chat-GPT">옵셔널 체이닝</a>
+              <a href="https://velog.io/@greenbean/react%EC%97%90%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EB%B0%9B%EC%95%84%EC%98%AC-%EB%95%8C-.Optional-Chaining.-%EB%AC%B8%EB%B2%95-feat.-chat-GPT" target="_blank" rel="noopener">옵셔널 체이닝</a>
 
             </li>
             <li>
-              <a href="https://velog.io/@greenbean/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9">
+              <a href="https://velog.io/@greenbean/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9" target="_blank" rel="noopener">
                 비구조화 할당
               </a>
             </li>
@@ -261,12 +261,12 @@ export const projects = [
         <h4>관련 내용 정리</h4>
         <ul>
           <li>
-            <a href="https://velog.io/@greenbean/%ED%8F%B4%EB%8D%94%EC%97%90%EC%84%9C-index.js%EB%A1%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%8C%8C%EC%9D%BC-%EA%B4%80%EB%A6%AC">index.js로 컴포넌트 파일 관리</a>
+            <a href="https://velog.io/@greenbean/%ED%8F%B4%EB%8D%94%EC%97%90%EC%84%9C-index.js%EB%A1%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%8C%8C%EC%9D%BC-%EA%B4%80%EB%A6%AC" target="_blank" rel="noopener">index.js로 컴포넌트 파일 관리</a>
           </li>
           <li>
-            <a href="https://velog.io/@greenbean/react-router-dom-v6-%EC%82%AC%EC%9A%A9-Outlet-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A1%9C-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B4%80%EB%A6%AC">Outlet 컴포넌트로 레이아웃 관리</a>
+            <a href="https://velog.io/@greenbean/react-router-dom-v6-%EC%82%AC%EC%9A%A9-Outlet-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A1%9C-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B4%80%EB%A6%AC" target="_blank" rel="noopener">Outlet 컴포넌트로 레이아웃 관리</a>
           </li>
-          <li><a href="https://velog.io/@greenbean/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EB%B0%9B%EC%95%84%EC%98%A4%EA%B8%B0%EB%A7%8C-%ED%95%98%EB%8A%94%EB%8D%B0%EB%8F%84-Redux%EB%82%98-RTK-Query%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%ED%95%84%EC%9A%94%EA%B0%80-%EC%9E%88%EB%8A%94%EA%B0%80">
+          <li><a href="https://velog.io/@greenbean/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EB%B0%9B%EC%95%84%EC%98%A4%EA%B8%B0%EB%A7%8C-%ED%95%98%EB%8A%94%EB%8D%B0%EB%8F%84-Redux%EB%82%98-RTK-Query%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%ED%95%84%EC%9A%94%EA%B0%80-%EC%9E%88%EB%8A%94%EA%B0%80" target="_blank" rel="noopener">
             데이터를 받아오기만 하는데도 Redux나 RTK Query를 사용할 필요가 있는가
           </a></li>
         </ul>

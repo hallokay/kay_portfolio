@@ -16,24 +16,19 @@ const Landing = () => {
           </video>
         </ImgWrap>
         <Desc>
+          <p>안녕하세요!</p>
+          <span className="point">프론트엔드 개발자</span>
           <p>
-          안녕하세요! 
-          </p>
-          <span className='point'>프론트엔드 개발자</span>
-          <p>
-
-        <Title>전진희</Title>
-          입니다.
+            <Title>전진희</Title>
+            입니다.
           </p>
         </Desc>
         <HeaderSocial>
           {socialLink.map((item, i) => (
             <li key={i}>
-              <a href={item.url} target="_blank">
+              <a href={item.url} target="_blank" rel="noopener">
                 {item.icon}
-                <span>
-                  {item.name}
-                </span>
+                <span>{item.name}</span>
               </a>
             </li>
           ))}

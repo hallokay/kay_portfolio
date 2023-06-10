@@ -17,20 +17,19 @@ const Projects = () => {
           const { id, img, title, url, desc, code } = elem;
           return (
             <Card key={id}>
-              <a href={url} className="thumnail">
+              <a href={url} target="_blank" rel="noopener" className="thumnail">
                 <img src={img} alt={title} />
               </a>
               <div className="info">
                 <h3 className="title">{title}</h3>
                 <p>{desc}</p>
                 <div className="link">
-                  <a href={url} target="_blank">
+                  <a href={url} target="_blank" rel="noopener">
                     <i className="icon-link"></i>
                   </a>
-                  <a href={code} target="_blank">
+                  <a href={code} target="_blank" rel="noopener">
                     <FontAwesomeIcon icon={faGithub} />
                   </a>
-
                 </div>
               </div>
             </Card>

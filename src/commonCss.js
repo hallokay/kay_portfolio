@@ -30,8 +30,5 @@ const SectionTitle = styled.h2`
   }
 `;
 
-const Btn = styled.button `
-
-`
 
 export { Container, Grid, Section, SectionTitle };

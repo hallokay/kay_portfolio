@@ -1,7 +1,7 @@
 import { Landing, About, Projects, Resume } from "../components/index";
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import {Footer} from './index'
+
 
 const Page = () => {
 const navigate = useNavigate();
@@ -33,7 +33,7 @@ useEffect(() => {
       <About />
       <Resume />
       <Projects />
-      {/* <Footer/> */}
+  
     </main>
   );
 };

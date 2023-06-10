@@ -1,26 +1,26 @@
 import React from "react";
 import styled from "styled-components";
-import { Container, SectionTitle, Grid } from "../commonCss";
+import { Container, Grid } from "../commonCss";
 import { ResumeData } from "../constants/constants";
 import { Card } from "./index";
 
 const Resume = () => {
   return (
     <Container id="resume">
-      <SectionTitle></SectionTitle>
+
 
       <ResumeGrid>
         <Timeline>
           {ResumeData.map((data, i) => {
-            if (data.category == "experience") {
-              return <Card key={i} data={data} />;
+            if (data.category === "experience") {
+              return <Card key={i} data={data} />
             }
           })}
         </Timeline>
         <Timeline>
           {ResumeData.map((data, i) => {
-            if (data.category == "edu") {
-              return <Card key={i} data={data} />;
+            if (data.category === "edu") {
+              return <Card key={i} data={data} />
             }
           })}
         </Timeline>
