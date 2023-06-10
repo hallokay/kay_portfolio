@@ -8,7 +8,6 @@ const About = () => {
 
   return (
     <Container id="about">
-     
       <AboutGrid>
         <div className="imgwrap">
           <img src="./assets/img/about.jpg" alt="이미지" />
@@ -18,6 +17,7 @@ const About = () => {
           <button>
             <a
               target="_blank"
+              rel="noreferrer"
               href="https://glass-possum-fe9.notion.site/036f235f83904a319ceadae3eb812365"
             >
               이력서 보기

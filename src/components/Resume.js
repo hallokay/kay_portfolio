@@ -15,6 +15,7 @@ const Resume = () => {
             if (data.category === "experience") {
               return <Card key={i} data={data} />
             }
+            return null;
           })}
         </Timeline>
         <Timeline>
@@ -22,6 +23,7 @@ const Resume = () => {
             if (data.category === "edu") {
               return <Card key={i} data={data} />
             }
+            return null;
           })}
         </Timeline>
       </ResumeGrid>
