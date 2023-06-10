@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/kay_portfolio/static/css/main.5d85cafa.css",
+    "main.js": "/kay_portfolio/static/js/main.bb903e65.js",
+    "index.html": "/kay_portfolio/index.html",
+    "main.5d85cafa.css.map": "/kay_portfolio/static/css/main.5d85cafa.css.map",
+    "main.bb903e65.js.map": "/kay_portfolio/static/js/main.bb903e65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5d85cafa.css",
+    "static/js/main.bb903e65.js"
+  ]
+}
