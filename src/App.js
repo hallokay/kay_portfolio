@@ -1,6 +1,6 @@
 import "./App.css";
 import { Routes, Route } from "react-router-dom";
-import { Layout, Login, Page } from "./Layout";
+import { Layout, Page } from "./Layout";
 // import { Landing, About, Projects,Resume } from './components/index'
 
 function App() {
