@@ -26,7 +26,7 @@ const Landing = () => {
         <HeaderSocial>
           {socialLink.map((item, i) => (
             <li key={i}>
-              <a href={item.url} target="_blank" rel="noreferrer">
+              <a href={item.url} target="_blank" rel="noopener">
                 {item.icon}
                 <span>{item.name}</span>
               </a>
