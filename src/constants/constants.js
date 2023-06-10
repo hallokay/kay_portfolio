@@ -122,17 +122,96 @@ export const ResumeData = [
 
 export const projects = [
   {
-    id: 1,
-    title: "Youtube(clone)",
-    img: "",
-    code: "https://github.com/hallokay/youtube_clone",
-    url: "https://645b3e3750f99f0724d6220a--prismatic-chaja-dd6e5d.netlify.app/",
-    desc: `RAPID API를 활용해 리액트로 API로 정보를 받아오는 연습을 했습니다. 
-    constants.js파일을 만들어 필요한 아이콘과 이미지를 관리하는 방법과
-리액트 커스텀 훅으로 fetchFromAPI 훅을 만들어 공통으로 들어가는 부분을 정리하는 법도 배웠습니다.
-props를 통해 css를 조절해 재사용 가능한 컴포넌트를 만드는 방법도 배웠습니다.
-CSS는 material UI를 이용했습니다. 
-`,
+    id: 4,
+    title: "Netflix clone",
+    img: "/assets/img/netflix_cloneImg.jpg",
+    code: "https://github.com/hallokay/netflix",
+    url: "https://netflix-2faa1.web.app/",
+    desc: (<>
+      <p>
+        넷플릭스 페이지 클론입니다. react, reduxToolkit, firebase를 이용해 만들었습니다.
+        디즈니+와 비슷하지만, firebase에서 구글 로그인이 아닌 방식으로 회원가입을 하고 로그인 하는 방법으로 구현했고,
+        마음에 드는 영화 리스트를 저장할 수 있는 기능도 연습해볼 수 있었습니다.
+
+      </p>
+      <p>
+        다른 강의에서 배웠던 부분들을 한번 복습해보고자 시작했는데 비효율적이라고 생각이 들었던 부분들이 있어
+        그런 부분들은 제가 효율적이라고 느끼는 방식으로 변경했고, 혼자서는 어려웠던 부분들은 chat GPT를 이용해서 코드를 개선했습니다.
+
+      </p>
+      <p>
+
+        강의에서는 MERN stack으로 백엔드의 일부분도 포함이 되어 좋아하는 영화를 저장하는 부분을 구현하게 되어있었지만,
+        그 부분에 대해서 초보자가 따라할 수 없게 만들어져 있어 Mongo DB로 url를 받아오는 부분에서 에러를 만났고 그 부분을 해결하지 못했습니다.
+        대안으로 좋아하는 영화를 저장하는 부분은 리덕스를 이용해서 구현했습니다.
+      </p>
+      <div className="velog">
+        <h4>
+          관련 내용 정리
+        </h4>
+        <ul>
+          <li>
+            <a href="https://velog.io/@greenbean/netflix-clone-movieSlice-%EC%BD%94%EB%93%9C-%EA%B0%9C%EC%84%A0-%EC%84%A4%EB%AA%85">netflix movieSlice 코드 개선</a>
+
+          </li>
+          <li>
+            <a href="https://velog.io/@greenbean/netflix-clone-main-page-%EC%BD%94%EB%93%9C-%EA%B0%9C%EC%84%A0">main page 코드 개선</a>
+
+          </li>
+          <li>
+            <a href="https://velog.io/@greenbean/netflix-clone-%ED%9A%8C%EA%B3%A0">문제 해결과 회고</a>
+
+          </li>
+        </ul>
+      </div>
+
+    </>
+    ),
+  },
+
+  {
+    id: 3,
+    title: "디즈니+(clone)",
+    img: "/assets/img/disney_cloneImg.jpg",
+    code: "https://github.com/hallokay/disney_clone",
+    url: "https://disnetplus-clone-7dff2.web.app",
+    desc: (
+      <>
+        <p>
+          react, reduxToolkit, firebase, styled Components를 이용해 만들어진 디즈니+ clone 입니다.
+          firebase를 이용해 배포했습니다.
+        </p>
+        <p>
+          이 프로젝트를 통해 파이어베이스를 다뤄보고 파이어베이스를 이용해 구글 아이디로 로그인하는 방법과
+          로그인한 유저정보를 리덕스로 저장하는 방법을 배웠습니다.
+
+          또, styled Components를 이용해 CSS 스타일을 컴포넌트로 다루는 방법을 배웠습니다.
+        </p>
+        <p>
+          이 페이지의 영화목록은 firebase cloud store를 이용했는데 movie라는 컬렉션을 생성해 영화 정보를 입력해주고
+          받아오는 방식으로 만들었습니다.
+          원래는 강의에 없는 부분이지만, 일일히 컬렉션에 영화 데이터를 수동으로 넣기가 귀찮아져
+          ADD메뉴를 만들어 영화데이터를 추가하는 페이지를 만들어보았습니다.
+
+        </p>
+        <div className="velog">
+          <h4>
+            관련 내용 정리
+          </h4>
+
+          <ul>
+            <li>
+              <a href="https://velog.io/@greenbean/react%EC%97%90%EC%84%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EB%B0%9B%EC%95%84%EC%98%AC-%EB%95%8C-.Optional-Chaining.-%EB%AC%B8%EB%B2%95-feat.-chat-GPT">옵셔널 체이닝</a>
+
+            </li>
+            <li>
+              <a href="https://velog.io/@greenbean/%EB%A6%AC%EC%95%A1%ED%8A%B8-%EB%B9%84%EA%B5%AC%EC%A1%B0%ED%99%94-%ED%95%A0%EB%8B%B9">
+                비구조화 할당
+              </a>
+            </li>
+          </ul>
+        </div>
+      </>),
   },
   {
     id: 2,
@@ -140,47 +219,72 @@ CSS는 material UI를 이용했습니다.
     img: "",
     code: "https://github.com/hallokay/E-commerce_React_Redux",
     url: "https://hallokay.github.io/E-commerce_React_Redux/",
-    desc: `리덕스를 이용해 로그인을 하여 유저정보를 저장하고, 물건을 장바구니에 추가하고 수량을 올리는 연습했습니다.
+    desc: (
+      <>
+        <p>
+          redux toolkit의 연습을 위해 만들어본 프로젝트입니다. redux toolkit으로 간단한 로그인 로그아웃을 해보고,
+          아이템들을 카트에 추가하거나 제거해보고 아이템의 수량을 조절하는 것을 연습했습니다.
+        </p>
+        <p>
+          스크롤의 양에 따라 헤더가 보이고 안보이는 것으로 바꿔보고 싶어서 시도해봤지만,
+          헤더가 사라지면 헤더 안에 있던 my cart 부분이 함께 display: none이 되어 기존 강의의 내용대로 스크롤이 생겨도 헤더는 사라지지 않게 했습니다.
+        </p>
 
+        <div className="velog">
+          <h4>관련 내용 정리</h4>
+          <ul>
+            <li>
+              <a href="https://velog.io/@greenbean/react%EC%97%90%EC%84%9C-Header-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9D%B4%EB%B2%A4%ED%8A%B8-feat.-Chat-GPT">헤더 스크롤 이벤트</a>
 
-    `,
+            </li>
+
+          </ul>
+        </div>
+      </>),
   },
   {
-    id: 3,
-    title: "디즈니+(clone)",
-    img: "",
-    code: "https://github.com/hallokay/disney_clone",
-    url: "https://disnetplus-clone-7dff2.web.app",
-    desc: `파이어베이스를 이용해 배포한 디즈니플러스 클론 페이지입니다. 
-    파이어베이스를 이용해 구글 아이디로 로그인하는 방법과 
-    로그인한 유저정보를 리덕스로 저장하는 방법을 배웠습니다.
-    또, styled Components를 이용해 CSS 스타일을 컴포넌트로 다루는 방법을 배웠습니다.
-    원래는 없는 부분이지만, ADD메뉴를 만들어 영화데이터를 추가하는 페이지를 만들어보았습니다.
-    `,
+    id: 1,
+    title: "Youtube(clone)",
+    img: "/assets/img/youtube.png",
+    code: "https://github.com/hallokay/youtube_clone",
+    url: "https://645b3e3750f99f0724d6220a--prismatic-chaja-dd6e5d.netlify.app/",
+    desc: (<>
+      <p>
+        RAPID API를 활용해 리액트로 API로 정보를 받아오는 연습을 했습니다.
+        constants.js파일을 만들어 필요한 아이콘과 이미지를 관리하는 방법과
+        fetchFromAPI을 만들어 공통으로 들어가는 부분을 정리하는 법도 배웠습니다.
+        props를 통해 css를 조절해 재사용 가능한 컴포넌트를 만드는 방법도 배웠습니다.
+        CSS는 material UI를 이용했습니다.
+      </p>
+      <div className="velog">
+        <h4>관련 내용 정리</h4>
+        <ul>
+          <li>
+            <a href="https://velog.io/@greenbean/%ED%8F%B4%EB%8D%94%EC%97%90%EC%84%9C-index.js%EB%A1%9C-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8-%ED%8C%8C%EC%9D%BC-%EA%B4%80%EB%A6%AC">index.js로 컴포넌트 파일 관리</a>
+          </li>
+          <li>
+            <a href="https://velog.io/@greenbean/react-router-dom-v6-%EC%82%AC%EC%9A%A9-Outlet-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EB%A1%9C-%EB%A0%88%EC%9D%B4%EC%95%84%EC%9B%83-%EA%B4%80%EB%A6%AC">Outlet 컴포넌트로 레이아웃 관리</a>
+          </li>
+          <li><a href="https://velog.io/@greenbean/%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%A5%BC-%EB%B0%9B%EC%95%84%EC%98%A4%EA%B8%B0%EB%A7%8C-%ED%95%98%EB%8A%94%EB%8D%B0%EB%8F%84-Redux%EB%82%98-RTK-Query%EB%A5%BC-%EC%82%AC%EC%9A%A9%ED%95%A0-%ED%95%84%EC%9A%94%EA%B0%80-%EC%9E%88%EB%8A%94%EA%B0%80">
+            데이터를 받아오기만 하는데도 Redux나 RTK Query를 사용할 필요가 있는가
+          </a></li>
+        </ul>
+      </div>
+    </>)
+    ,
   },
-  // {
-  //   id: 4,
-  //   title: "Netflix clone",
-  //   img: "",
-  //   code: "https://github.com/hallokay/netflix",
-  //   url: "https://netflix-2faa1.web.app/",
-  //   desc: `넷플릭스 페이지 클론입니다. 파이어베이스를 이용했고, MERN stack입니다.
-  // MERN Stack이라는 개념을 몰랐지만, 이 강의를 통해 알아보게 되었고,
-  // 이전에 배웠던 효율적이라고 느꼈던 방식들을 복습하고자 강의와는 다르게 바꾸어 적용해보며 만들었습니다.
-  // 강의에 프로젝트에 헤더가 스크롤에 따라 사라졌다 생기는 부분을 한번 짚어주어 그 부분을 연습하기에 좋았습니다.
-  // 디즈니+와 비슷하지만, firebase에서 구글 로그인이 아닌 방식으로 회원가입을 하고 로그인 하는 방법을 배워보고,
-  // 마음에 드는 영화 리스트를 저장할 수 있는 기능도 연습해볼 수 있었습니다.
-  //   `,
-  // },
+
+
+
 
   // {
   //   id: 4,
-  //   title: "블로그(redux-toolkit)",
+  //   title: "redux toolkit 복습(진행중)",
   //   img: "",
   //   code: "",
   //   url: "",
-  //   desc: `
-
-  //   `,
+  //   desc: (<p>
+  //     redux toolkit에 대한 강의 내용 복습입니다. 
+  //   </p>),
   // },
 ];

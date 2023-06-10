@@ -3,10 +3,10 @@ import styled from "styled-components";
 import { Container, SectionTitle, Grid } from "../commonCss";
 
 import { aboutMe } from "../constants/constants";
- 
+
 
 const About = () => {
-  
+
   return (
     <Container id="about">
       <SectionTitle>소개</SectionTitle>
@@ -47,6 +47,14 @@ const AboutGrid = styled(Grid)`
       object-fit: cover;
     }
   }
+
+  @media (max-width: 876px) {
+  grid-template-columns: 1fr;
+    .imgwrap {
+      margin: 0 auto 1rem;
+
+    }
+  }
 `;
 const AboutInfo = styled(Grid)`
   position: relative;
@@ -83,6 +91,12 @@ const AboutInfo = styled(Grid)`
     }
     &:hover {
       background: var(--first-color--alt);
+    }
+  }
+
+  @media (max-width: 876px) {
+    :before { 
+      display: none;
     }
   }
 `;

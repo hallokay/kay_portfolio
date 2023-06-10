@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import { Container, SectionTitle, Grid } from "../commonCss";
-import {projects} from '../constants/constants'
+import { projects } from '../constants/constants'
 
 
 const Projects = () => {
@@ -13,7 +13,7 @@ const Projects = () => {
       <SectionTitle>최근 작업</SectionTitle>
 
       <ProjectsGrid>
-        {projects.map((elem)=> {
+        {projects.map((elem) => {
           const { id, img, title, url, desc, code } = elem;
           return (
             <Card key={id}>
@@ -21,22 +21,22 @@ const Projects = () => {
                 <img src={img} alt={title} />
               </a>
               <div className="info">
-              <h3 className="title">{title}</h3>
-              <p>{desc}</p>
-              <div className="link">
-                <a href={url} target="_blank">
-                  <i className="icon-link"></i>
-                </a>
-                <a href={code} target="_blank">
-                  <FontAwesomeIcon icon={faGithub} />
-                </a>
+                <h3 className="title">{title}</h3>
+                <p>{desc}</p>
+                <div className="link">
+                  <a href={url} target="_blank">
+                    <i className="icon-link"></i>
+                  </a>
+                  <a href={code} target="_blank">
+                    <FontAwesomeIcon icon={faGithub} />
+                  </a>
 
-              </div>
+                </div>
               </div>
             </Card>
           );
         })}
-        </ProjectsGrid>
+      </ProjectsGrid>
     </Container>
   );
 };
@@ -53,16 +53,30 @@ const Card = styled(Grid)`
   box-shadow: var(--shadow);
   padding: 10px 20px;
 
+  .thumnail {
+    display: block;
+    margin-bottom: 1rem;
+    img{
+      border-radius: .5rem;
+    }
+  }
+
+  .info {
+    p {margin-bottom: .5rem
+    }
+
+  }
   .title {
     font-size: var(--h3-size);
+    margin-bottom: 1rem;
   }
   .link a {
     margin-right: 5px;
     padding: 5px;
     font-size: 25px;
   }
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
+  // @media (max-width: 768px) {
+  //   grid-template-columns: 1fr;
+  // }
 `;
 export default Projects;

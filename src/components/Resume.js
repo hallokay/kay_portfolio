@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Container, SectionTitle, Grid } from "../commonCss";
 import { ResumeData } from "../constants/constants";
-import {Card} from "./index";
+import { Card } from "./index";
 
 const Resume = () => {
   return (
@@ -32,7 +32,12 @@ const ResumeGrid = styled(Grid)`
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
 
-  ` 
+  @media(max-width: 1200px) {
+  grid-template-columns: 1fr;
+
+  }
+
+  `
 const Timeline = styled(Grid)`
   position: relative;
   box-shadow: var(--shadow);
