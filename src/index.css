@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css?family=Gugi:400");
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700,800');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700;900&display=swap');
 :root {
-  --first-color: hsl(353, 100%, 65%);
+  --first-color: hsl(353, 85%, 71%);
     --first-color--alt: hsl(353, 78%, 42%);
+    --name-color:hsl(246, 60%, 61%);
+    --name-color-alt:hsl(246, 41%, 53%);
+
+    --green-color:hsl(161, 60%, 61%);
+    --green-color-alt:hsl(161, 39%, 51%);
+
   --title-color: hsl(244, 24%, 26%);
   --text-color: hsl(244, 16%, 43%);
   --body-color: hsl(258, 60%, 98%);
@@ -10,9 +16,9 @@
 
   /* typo */
   --h1-font:"Gugi", "Noto Sans", sans-serif;
-  --body-font: "Nanum Gothic", "Noto Sans", sans-serif;
-  --h1-size: 2.25rem;
-  --h2-size: 1.5rem;
+  --body-font: 'Noto Sans KR', sans-serif;
+  --h1-size: 2.85rem;
+  --h2-size: 2rem;
   --h3-size: 1.25rem;
   --normal-size: 1rem;
   --small-size: 0.875rem;

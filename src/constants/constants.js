@@ -6,23 +6,24 @@ export const mainVideo = "/assets/img/video_main.mp4";
 
 export const aboutMe = (
   <>
-    <p>안녕하세요. 프론트엔드 개발자 전진희입니다. </p>
+    <h2>Front-end 개발자 전진희 입니다.</h2>
     <p>
-      저는 프론트엔드 개발자로서 1년의 경력을 가지고 있습니다. 이전 회사에서는
-      프로젝트의 요구사항에 맞추어 Vue를 사용하여 CMS 페이지를 개발한 경험이
-      있으며, Vue를 사용하여 개발하면서 뷰 라이브러리의 레이아웃 시스템과
-      컴포넌트 재사용성을 경험하였습니다.
+      저는 프론트엔드 개발자로서 <strong>1년의 경력</strong>을 가지고 있습니다.</p>
+    <p>
+      이전 회사에서는 프로젝트의 요구사항에 맞추어 Vue를 사용하여 CMS 페이지를
+      개발한 경험이 있으며, Vue 라이브러리의 레이아웃 시스템과 컴포넌트 재사용성을 경험하였습니다.
     </p>
-
+    <h2>현재</h2>
     <p>
-      현재는 React를 공부하고 있습니다. 강의를 보며 React를 공부하면서 간단한
+      React를 공부하고 있습니다. 강의를 보며 React를 공부하면서 간단한
       프로젝트를 진행해보았고, 상태관리를 위한 Redux-toolkit을 함께 배우고
       있습니다.
     </p>
+     <h2>자격증</h2>
     <p>
-      저는 정보처리기사 자격증을 보유하고 있습니다. 이전 회사 재직 당시 데이터를
+      저는 정보처리기사 자격증을 보유하고 있고, 이전 회사 재직 당시 데이터를
       조회해보며 SQL에 호기심을 느껴 SQLD 자격증을 공부하여 취득하였습니다.
-      앞으로 더 성장할 수 있는 개발자가 되기 위해 노력하겠습니다. 감사합니다.
+
     </p>
   </>
 );
@@ -213,35 +214,35 @@ export const projects = [
         </div>
       </>),
   },
-  {
-    id: 2,
-    title: "E-Commerce(redux)",
-    img: "",
-    code: "https://github.com/hallokay/E-commerce_React_Redux",
-    url: "https://hallokay.github.io/E-commerce_React_Redux/",
-    desc: (
-      <>
-        <p>
-          redux toolkit의 연습을 위해 만들어본 프로젝트입니다. redux toolkit으로 간단한 로그인 로그아웃을 해보고,
-          아이템들을 카트에 추가하거나 제거해보고 아이템의 수량을 조절하는 것을 연습했습니다.
-        </p>
-        <p>
-          스크롤의 양에 따라 헤더가 보이고 안보이는 것으로 바꿔보고 싶어서 시도해봤지만,
-          헤더가 사라지면 헤더 안에 있던 my cart 부분이 함께 display: none이 되어 기존 강의의 내용대로 스크롤이 생겨도 헤더는 사라지지 않게 했습니다.
-        </p>
+  // {
+  //   id: 2,
+  //   title: "E-Commerce(redux)",
+  //   img: "",
+  //   code: "https://github.com/hallokay/E-commerce_React_Redux",
+  //   url: "https://hallokay.github.io/E-commerce_React_Redux/",
+  //   desc: (
+  //     <>
+  //       <p>
+  //         redux toolkit의 연습을 위해 만들어본 프로젝트입니다. redux toolkit으로 간단한 로그인 로그아웃을 해보고,
+  //         아이템들을 카트에 추가하거나 제거해보고 아이템의 수량을 조절하는 것을 연습했습니다.
+  //       </p>
+  //       <p>
+  //         스크롤의 양에 따라 헤더가 보이고 안보이는 것으로 바꿔보고 싶어서 시도해봤지만,
+  //         헤더가 사라지면 헤더 안에 있던 my cart 부분이 함께 display: none이 되어 기존 강의의 내용대로 스크롤이 생겨도 헤더는 사라지지 않게 했습니다.
+  //       </p>
 
-        <div className="velog">
-          <h4>관련 내용 정리</h4>
-          <ul>
-            <li>
-              <a href="https://velog.io/@greenbean/react%EC%97%90%EC%84%9C-Header-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9D%B4%EB%B2%A4%ED%8A%B8-feat.-Chat-GPT">헤더 스크롤 이벤트</a>
+  //       <div className="velog">
+  //         <h4>관련 내용 정리</h4>
+  //         <ul>
+  //           <li>
+  //             <a href="https://velog.io/@greenbean/react%EC%97%90%EC%84%9C-Header-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9D%B4%EB%B2%A4%ED%8A%B8-feat.-Chat-GPT">헤더 스크롤 이벤트</a>
 
-            </li>
+  //           </li>
 
-          </ul>
-        </div>
-      </>),
-  },
+  //         </ul>
+  //       </div>
+  //     </>),
+  // },
   {
     id: 1,
     title: "Youtube(clone)",

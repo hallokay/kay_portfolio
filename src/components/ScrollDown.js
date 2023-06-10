@@ -21,7 +21,19 @@ const ScrollBtn = styled.div`
   right: 0%;
   width: 100%;
   font-size: var(--small-size);
-
+  a {
+    &:hover {
+      span {
+        color: var(--green-color);
+      }
+      .mouse {
+        border: 2px solid var(--green-color);
+      }
+      .wheel {
+        background: var(--green-color);
+      }
+    }
+  }
   .mouse {
     position: relative;
     margin: auto;

@@ -43,7 +43,7 @@ const Aside = styled.aside`
   padding: 2.5rem 1.5rem;
   z-index: 10;
 `;
-const Logo = styled.a``;
+// const Logo = styled.a``;
 
 const Nav = styled.nav`
   justify-self: center;
@@ -59,6 +59,9 @@ li a {
   font-size: 1.5rem;
   color: var(--title-color);
   font-weight: var(--font-bold);
+  &:hover {
+    color: var(--first-color);
+  }
 }
 `;
 

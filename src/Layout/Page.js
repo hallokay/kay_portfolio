@@ -1,29 +1,34 @@
 import { Landing, About, Projects, Resume } from "../components/index";
 import { useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {Footer} from './index'
 
 const Page = () => {
+const navigate = useNavigate();
 
-//  function ScrollToTopOnMount() {
-//    const location = useLocation();
 
-//    useEffect(() => {
-//      const { hash } = location;
-//      if (hash) {
-//        const element = document.getElementById(hash.substring(1));
-//        if (element) {
-//          element.scrollIntoView({ behavior: "smooth" });
-//        }
-//      }
-//    }, [location]);
+useEffect(() => {
+  const handleScroll = () => {
+    const { scrollY } = window;
 
-//    return null;
-//  }
+    if (scrollY < 500) {
+      navigate("/#home");
+    } else if (scrollY < 1000) {
+      navigate("/#about");
+    } else if (scrollY < 2000) {
+      navigate("/#resume");
+    } else if (scrollY < 2500) {
+      navigate("/#project");
+    }
+  };
+      window.addEventListener("scroll", handleScroll);
 
+ return () => {
+   window.removeEventListener("scroll", handleScroll);
+ };
+  }, [navigate])
   return (
     <main>
-      {/* <ScrollToTopOnMount/> */}
       <Landing />
       <About />
       <Resume />

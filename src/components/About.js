@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Container, SectionTitle, Grid } from "../commonCss";
+import Marquee from "react-fast-marquee";
 
 import { aboutMe } from "../constants/constants";
 
@@ -9,10 +10,10 @@ const About = () => {
 
   return (
     <Container id="about">
-      <SectionTitle>소개</SectionTitle>
+     
       <AboutGrid>
         <div className="imgwrap">
-          <img src="./assets/img/img_main.jpg" alt="이미지" />
+          <img src="./assets/img/about.jpg" alt="이미지" />
         </div>
         <AboutInfo>
           {aboutMe}
@@ -36,8 +37,8 @@ const AboutGrid = styled(Grid)`
   column-gap: 2rem;
 
   .imgwrap {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     display: flex;
     justify-content: center;
@@ -66,7 +67,7 @@ const AboutInfo = styled(Grid)`
   :before {
     position: absolute;
     left: -0.9rem;
-    top: 15%;
+    top: 30%;
     content: "";
     width: 0;
     height: 0;
@@ -74,11 +75,17 @@ const AboutInfo = styled(Grid)`
     border-bottom: 10px solid transparent;
     border-right: 15px solid var(--container-color);
   }
+  h2 {
+    margin: 1rem 0;
+  }
+  p {
+    margin-bottom: .8rem;
+  }
 
   button {
     display: inline-block;
     width: fit-content;
-    background: var(--first-color);
+    background: var(--name-color);
     padding: 10px 2rem;
     box-shadow: 0 0 1px rgb(0 0 0 / 0%);
     border: 1px solid transparent;
@@ -90,12 +97,12 @@ const AboutInfo = styled(Grid)`
       font-weight: var(--font-bold);
     }
     &:hover {
-      background: var(--first-color--alt);
+      background: var(--name-color-alt);
     }
   }
 
   @media (max-width: 876px) {
-    :before { 
+    :before {
       display: none;
     }
   }

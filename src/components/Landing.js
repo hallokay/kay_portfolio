@@ -15,10 +15,16 @@ const Landing = () => {
             <source src={mainVideo} type="video/mp4" />
           </video>
         </ImgWrap>
-        <Title>전진희</Title>
         <Desc>
-          <span>프론트엔드 개발자</span>
+          <p>
+          안녕하세요! 
+          </p>
+          <span className='point'>프론트엔드 개발자</span>
+          <p>
+
+        <Title>전진희</Title>
           입니다.
+          </p>
         </Desc>
         <HeaderSocial>
           {socialLink.map((item, i) => (
@@ -34,7 +40,6 @@ const Landing = () => {
         </HeaderSocial>
         <ScrollDown />
       </div>
-
       <Bg />
     </LandingContainer>
   );
@@ -52,8 +57,8 @@ const LandingContainer = styled(Container)`
 `;
 const ImgWrap = styled.div`
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   box-shadow: rgb(0 0 0 / 69%) 0px 26px 30px -10px,
     rgb(0 0 0 / 73%) 0px 16px 10px -10px;
@@ -95,12 +100,13 @@ const ImgWrap = styled.div`
   }
 `; 
 const Title = styled.h1`
+  display: inline-block;
   margin-bottom: 0.5rem;
   font-family: var(--h1-font);
   font-size: var(--h1-size);
   font-weight: var(--font-bold);
-  color: var(--title-color);
-  letter-spacing: .5rem;
+  color: var(--name-color);
+  letter-spacing: 0.5rem;
 `;
 const Desc = styled.p`
   font-size: 1rem;
@@ -109,15 +115,21 @@ const Desc = styled.p`
     display: inline-block;
     font-weight: bold;
   }
-  i {
-  }
+
+.point {
+ font-size: 1.2rem;
+}
 `;
 
 const HeaderSocial = styled.ul`
-
+  a {
+    &:hover {
+      color: var(--green-color);
+    }
+  }
   span {
-    font-size: 12px;
+    font-size: .875rem;
     margin-left: 5px;
   }
-`
+`;
 export default Landing

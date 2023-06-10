@@ -7,7 +7,7 @@ import { Card } from "./index";
 const Resume = () => {
   return (
     <Container id="resume">
-      <SectionTitle>이력</SectionTitle>
+      <SectionTitle></SectionTitle>
 
       <ResumeGrid>
         <Timeline>

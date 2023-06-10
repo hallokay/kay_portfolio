@@ -53,9 +53,14 @@ const Card = styled(Grid)`
   box-shadow: var(--shadow);
   padding: 10px 20px;
 
+  a {
+    &:hover {
+      color: var(--name-color)
+    }
+  }
   .thumnail {
     display: block;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
     img{
       border-radius: .5rem;
     }
@@ -67,13 +72,23 @@ const Card = styled(Grid)`
 
   }
   .title {
-    font-size: var(--h3-size);
+    font-size: var(--h2-size);
     margin-bottom: 1rem;
   }
   .link a {
     margin-right: 5px;
     padding: 5px;
     font-size: 25px;
+    &:hover {
+      color: var(--green-color)
+    }
+  }
+
+  .velog {
+    h4 {
+      color: var(--name-color);
+      font-size: 1.2rem;
+    }
   }
   // @media (max-width: 768px) {
   //   grid-template-columns: 1fr;
