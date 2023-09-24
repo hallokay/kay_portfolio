@@ -11,7 +11,7 @@ const Card = ({ data }) => {
         <span>{data?.company}</span>
       </h3>
 
-      <p>{data.desc}</p>
+      {data.desc}
     </TimelineItem>
   );
 };

@@ -7,6 +7,8 @@ const Container = styled.section`
 `;
 const Grid = styled.div`
     display: grid;
+
+    
 `;
 const Section = styled.section`
     padding: 7rem 0 2rem;

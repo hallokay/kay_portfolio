@@ -18,10 +18,10 @@ const Landing = () => {
         <Desc>
           <p>안녕하세요!</p>
           <span className="point">프론트엔드 개발자</span>
-          <p>
+          <div>
             <Title>전진희</Title>
             입니다.
-          </p>
+          </div>
         </Desc>
         <HeaderSocial>
           {socialLink.map((item, i) => (
@@ -93,7 +93,7 @@ const ImgWrap = styled.div`
       z-index: 1;
     }
   }
-`; 
+`;
 const Title = styled.h1`
   display: inline-block;
   margin-bottom: 0.5rem;
@@ -103,7 +103,7 @@ const Title = styled.h1`
   color: var(--name-color);
   letter-spacing: 0.5rem;
 `;
-const Desc = styled.p`
+const Desc = styled.div`
   font-size: 1rem;
 
   span {

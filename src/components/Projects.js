@@ -10,33 +10,62 @@ import { projects } from '../constants/constants'
 const Projects = () => {
   return (
     <Container id="project">
-      <SectionTitle>최근 작업</SectionTitle>
+      <SectionTitle>작업</SectionTitle>
 
       <ProjectsGrid>
+
         {projects.map((elem) => {
           const { id, img, title, url, desc, code } = elem;
+
           return (
             <Card key={id}>
-              <a
-                href={url}
-                target="_blank"
-                rel="noreferrer"
-                className="thumnail"
-              >
-                <img src={img} alt={title} />
-              </a>
-              <div className="info">
-                <h3 className="title">{title}</h3>
-                <p>{desc}</p>
-                <div className="link">
-                  <a href={url} target="_blank" rel="noreferrer">
-                    <i className="icon-link"></i>
+              {url && (
+                <>
+                  <a
+                    href={url}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="thumnail"
+                  >
+                    <img src={img} alt={title} />
                   </a>
-                  <a href={code} target="_blank" rel="noreferrer">
-                    <FontAwesomeIcon icon={faGithub} />
-                  </a>
-                </div>
-              </div>
+                  <div className="info">
+                    <h3 className="title">{title}</h3>
+                    {desc}
+                    <div className="link">
+                      <a href={url} target="_blank" rel="noreferrer">
+                        <i className="icon-link"></i>
+                      </a>
+                      <a href={code} target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} />
+                      </a>
+                    </div>
+                  </div>
+                </>
+              )}
+
+              {url === '' && (
+                <>
+                  <div
+                    className="thumnail"
+                  >
+                    <img src={img} alt={title} />
+                  </div>
+                  <div className="info">
+                    <h3 className="title">{title}</h3>
+                    {desc}
+                    <div className="link">
+                      <a href={code} target="_blank" rel="noreferrer">
+                        <FontAwesomeIcon icon={faGithub} />
+                      </a>
+                    </div>
+                  </div>
+                </>
+              )
+
+              }
+
+
             </Card>
           );
         })}
@@ -45,17 +74,27 @@ const Projects = () => {
   );
 };
 const ProjectsGrid = styled(Grid)`
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: 1fr;
+
   gap: 1.875rem;
 
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (min-width: 1200px) {
+    grid-template-columns: repeat(3, 1fr);
+
+  }
+
 `;
-const Card = styled(Grid)`
+const Card = styled.div`
+
   position: relative;
   overflow: hidden;
-  grid-template-columns: repeat(1fr);
   border-radius: var(--border-radius);
   box-shadow: var(--shadow);
   padding: 10px 20px;
+
 
   a {
     &:hover {
@@ -94,8 +133,6 @@ const Card = styled(Grid)`
       font-size: 1.2rem;
     }
   }
-  // @media (max-width: 768px) {
-  //   grid-template-columns: 1fr;
-  // }
+
 `;
 export default Projects;

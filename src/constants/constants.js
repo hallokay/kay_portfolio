@@ -8,22 +8,21 @@ export const aboutMe = (
   <>
     <h2>Front-end 개발자 전진희 입니다.</h2>
     <p>
-      저는 프론트엔드 개발자로서 <strong>1년의 경력</strong>을 가지고 있습니다.</p>
+      저는 프론트엔드 개발자로서 <strong>1년의 경험</strong>을 가지고 있습니다.</p>
     <p>
       이전 회사에서는 프로젝트의 요구사항에 맞추어 Vue를 사용하여 CMS 페이지를
-      개발한 경험이 있으며, Vue 라이브러리의 레이아웃 시스템과 컴포넌트 재사용성을 경험하였습니다.
+      개발한 경험이 있습니다.
     </p>
     <h2>현재</h2>
     <p>
-      React를 공부하고 있습니다. 강의를 보며 React를 공부하면서 간단한
-      프로젝트를 진행해보았고, 상태관리를 위한 Redux-toolkit을 함께 배우고
+      React를 공부하고 있습니다. 강의를 보며 React를 공부하면서 기본적인 react
+      프로젝트를 진행해보았고, 아직 배우는 과정중에 있지만 상태관리를 위한 Redux-toolkit과 NEXT.JS를 공부하며 서버사이드 렌더링에 관한 부분도 익히고
       있습니다.
     </p>
-     <h2>자격증</h2>
+    <h2>자격증</h2>
     <p>
       저는 정보처리기사 자격증을 보유하고 있고, 이전 회사 재직 당시 데이터를
       조회해보며 SQL에 호기심을 느껴 SQLD 자격증을 공부하여 취득하였습니다.
-
     </p>
   </>
 );
@@ -33,7 +32,7 @@ export const navItems = [
   { name: "about", to: "#about", icon: "icon-user-following" },
   { name: "resume", to: "#resume", icon: "icon-graduation" },
   { name: "project", to: "#project", icon: "icon-layers" },
-  // { name: "contact", to: "#contact", icon: "icon-note" },
+
 ];
 
 export const socialLink = [
@@ -64,7 +63,7 @@ export const ResumeData = [
         <p>
           정보 디자인과는 당시 신설학과로 IT 디자인, 영상 촬영 및 편집 등 디지털
           콘텐츠들의 전반적인 내용을 다루는 학과로 어도비의 디자인 툴을 이용한
-          작업과 아두이노를 통한 레고 작업, 웨어러블 등 사람이 경험하는 디지털
+          작업과 공대 학생들의 도움으로 아두이노를 통한 레고 작업, 웨어러블 등 사람이 경험하는 디지털
           요소들에 대해서도 배우고 경험했습니다.
         </p>
       </>
@@ -121,7 +120,66 @@ export const ResumeData = [
   },
 ];
 
+
 export const projects = [
+  {
+    id: 7,
+    title: 'trello clone',
+    img: '',
+    code: 'https://github.com/hallokay/trello',
+    url: '',
+    desc: (<>
+      <p>
+        Next.js 13의 새로운 기능 server action에 대해 공부하며 간단하게 만들어보았습니다.
+
+      </p>
+    </>)
+
+  },
+  {
+    id: 6,
+    title: 'NEXT.js server action',
+    img: '',
+    code: 'https://github.com/hallokay/next_server_action',
+    url: '',
+    desc: (<>
+      <p>
+        Next.js 13의 새로운 기능 server action에 대해 공부하며 간단하게 만들어보았습니다.
+
+      </p>
+
+
+      <div className="velog">
+        <h4>
+          내용 정리
+        </h4>
+        <ul>
+          <li>
+            <a href="https://velog.io/@greenbean/next.js-server-action" target="_blank" rel="noreferrer">next.js server action</a>
+
+          </li>
+
+        </ul>
+      </div>
+    </>)
+
+  },
+  {
+    id: 5,
+    title: "렌트카 사이트",
+    img: '',
+    code: 'https://github.com/hallokay/car_showcase_next.js',
+    url: '',
+    desc: (<>
+      <p>
+        Next.js, tailwind CSS를 이용해 만든 렌트카 페이지입니다.
+        이 프로젝트를 통해 NEXT.js에 대한
+      </p>
+    </>)
+
+
+  },
+
   {
     id: 4,
     title: "Netflix clone",
@@ -131,21 +189,12 @@ export const projects = [
     desc: (<>
       <p>
         넷플릭스 페이지 클론입니다. react, reduxToolkit, firebase를 이용해 만들었습니다.
-        디즈니+와 비슷하지만, firebase에서 구글 로그인이 아닌 방식으로 회원가입을 하고 로그인 하는 방법으로 구현했고,
-        마음에 드는 영화 리스트를 저장할 수 있는 기능도 연습해볼 수 있었습니다.
+        firebase에서 구글 로그인이 아닌 방식으로 회원가입을 하고 로그인 하는 방법으로 구현했고,
+        reduxToolkit으로 마음에 드는 영화 리스트를 저장할 수 있는 기능도 연습해볼 수 있었습니다.
 
       </p>
-      <p>
-        다른 강의에서 배웠던 부분들을 한번 복습해보고자 시작했는데 비효율적이라고 생각이 들었던 부분들이 있어
-        그런 부분들은 제가 효율적이라고 느끼는 방식으로 변경했고, 혼자서는 어려웠던 부분들은 chat GPT를 이용해서 코드를 개선했습니다.
 
-      </p>
-      <p>
 
-        강의에서는 MERN stack으로 백엔드의 일부분도 포함이 되어 좋아하는 영화를 저장하는 부분을 구현하게 되어있었지만,
-        그 부분에 대해서 초보자가 따라할 수 없게 만들어져 있어 Mongo DB로 url를 받아오는 부분에서 에러를 만났고 그 부분을 해결하지 못했습니다.
-        대안으로 좋아하는 영화를 저장하는 부분은 리덕스를 이용해서 구현했습니다.
-      </p>
       <div className="velog">
         <h4>
           관련 내용 정리
@@ -180,21 +229,14 @@ export const projects = [
       <>
         <p>
           react, reduxToolkit, firebase, styled Components를 이용해 만들어진 디즈니+ clone 입니다.
-          firebase를 이용해 배포했습니다.
+
         </p>
         <p>
           이 프로젝트를 통해 파이어베이스를 다뤄보고 파이어베이스를 이용해 구글 아이디로 로그인하는 방법과
           로그인한 유저정보를 리덕스로 저장하는 방법을 배웠습니다.
 
-          또, styled Components를 이용해 CSS 스타일을 컴포넌트로 다루는 방법을 배웠습니다.
         </p>
-        <p>
-          이 페이지의 영화목록은 firebase cloud store를 이용했는데 movie라는 컬렉션을 생성해 영화 정보를 입력해주고
-          받아오는 방식으로 만들었습니다.
-          원래는 강의에 없는 부분이지만, 일일히 컬렉션에 영화 데이터를 수동으로 넣기가 귀찮아져
-          ADD메뉴를 만들어 영화데이터를 추가하는 페이지를 만들어보았습니다.
 
-        </p>
         <div className="velog">
           <h4>
             관련 내용 정리
@@ -214,35 +256,7 @@ export const projects = [
         </div>
       </>),
   },
-  // {
-  //   id: 2,
-  //   title: "E-Commerce(redux)",
-  //   img: "",
-  //   code: "https://github.com/hallokay/E-commerce_React_Redux",
-  //   url: "https://hallokay.github.io/E-commerce_React_Redux/",
-  //   desc: (
-  //     <>
-  //       <p>
-  //         redux toolkit의 연습을 위해 만들어본 프로젝트입니다. redux toolkit으로 간단한 로그인 로그아웃을 해보고,
-  //         아이템들을 카트에 추가하거나 제거해보고 아이템의 수량을 조절하는 것을 연습했습니다.
-  //       </p>
-  //       <p>
-  //         스크롤의 양에 따라 헤더가 보이고 안보이는 것으로 바꿔보고 싶어서 시도해봤지만,
-  //         헤더가 사라지면 헤더 안에 있던 my cart 부분이 함께 display: none이 되어 기존 강의의 내용대로 스크롤이 생겨도 헤더는 사라지지 않게 했습니다.
-  //       </p>
 
-  //       <div className="velog">
-  //         <h4>관련 내용 정리</h4>
-  //         <ul>
-  //           <li>
-  //             <a href="https://velog.io/@greenbean/react%EC%97%90%EC%84%9C-Header-%EC%8A%A4%ED%81%AC%EB%A1%A4-%EC%9D%B4%EB%B2%A4%ED%8A%B8-feat.-Chat-GPT">헤더 스크롤 이벤트</a>
-
-  //           </li>
-
-  //         </ul>
-  //       </div>
-  //     </>),
-  // },
   {
     id: 1,
     title: "Youtube(clone)",
@@ -251,10 +265,9 @@ export const projects = [
     url: "https://645b3e3750f99f0724d6220a--prismatic-chaja-dd6e5d.netlify.app/",
     desc: (<>
       <p>
-        RAPID API를 활용해 리액트로 API로 정보를 받아오는 연습을 했습니다.
+        RAPID API를 활용한 youtube clone 입니다.
         constants.js파일을 만들어 필요한 아이콘과 이미지를 관리하는 방법과
-        fetchFromAPI을 만들어 공통으로 들어가는 부분을 정리하는 법도 배웠습니다.
-        props를 통해 css를 조절해 재사용 가능한 컴포넌트를 만드는 방법도 배웠습니다.
+        Outlet 컴포넌트로 레이아웃을 관리하는 방법에 대해 공부했습니다.
         CSS는 material UI를 이용했습니다.
       </p>
       <div className="velog">
@@ -278,14 +291,5 @@ export const projects = [
 
 
 
-  // {
-  //   id: 4,
-  //   title: "redux toolkit 복습(진행중)",
-  //   img: "",
-  //   code: "",
-  //   url: "",
-  //   desc: (<p>
-  //     redux toolkit에 대한 강의 내용 복습입니다. 
-  //   </p>),
-  // },
+
 ];
