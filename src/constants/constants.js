@@ -130,8 +130,7 @@ export const projects = [
     url: '',
     desc: (<>
       <p>
-        Next.js 13의 새로운 기능 server action에 대해 공부하며 간단하게 만들어보았습니다.
-
+        현재 작업중인 프로젝트입니다.
       </p>
     </>)
 
@@ -139,12 +138,13 @@ export const projects = [
   {
     id: 6,
     title: 'NEXT.js server action',
-    img: '',
+    img: '/assets/img/serveraction.jpg',
     code: 'https://github.com/hallokay/next_server_action',
     url: '',
     desc: (<>
       <p>
-        Next.js 13의 새로운 기능 server action에 대해 공부하며 간단하게 만들어보았습니다.
+        mockAPI를 이용해
+        Next.js 13의 새로운 기능인 server action에 대해 공부하며 products warehouse를 만들어보았습니다.
 
       </p>
 
@@ -167,13 +167,13 @@ export const projects = [
   {
     id: 5,
     title: "렌트카 사이트",
-    img: '',
+    img: '/assets/img/rent-car.jpg',
     code: 'https://github.com/hallokay/car_showcase_next.js',
     url: '',
     desc: (<>
       <p>
-        Next.js, tailwind CSS를 이용해 만든 렌트카 페이지입니다.
-        이 프로젝트를 통해 NEXT.js에 대한
+        Next.js, tailwind CSS를 이용해 만든 렌트카 렌딩페이지 입니다.
+        Rapid API이용했고, 더보기 페이지를 눌러 데이터를 받아올 때마다 페이지가 새로고침 되어 맨 위로 올라가는 next.js의 버그가 있습니다.
       </p>
     </>)
 
