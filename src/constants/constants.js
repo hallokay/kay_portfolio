@@ -173,7 +173,7 @@ export const projects = [
     desc: (<>
       <p>
         Next.js, tailwind CSS를 이용해 만든 렌트카 렌딩페이지 입니다.
-        Rapid API이용했고, 더보기 페이지를 눌러 데이터를 받아올 때마다 페이지가 새로고침 되어 맨 위로 올라가는 next.js의 버그가 있습니다.
+        Rapid API에서 데이터를 제공받아 만들었습니다.
       </p>
     </>)
 
