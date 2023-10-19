@@ -122,19 +122,19 @@ export const ResumeData = [
 
 
 export const projects = [
-  {
-    id: 7,
-    title: 'trello clone',
-    img: '',
-    code: 'https://github.com/hallokay/trello',
-    url: '',
-    desc: (<>
-      <p>
-        현재 작업중인 프로젝트입니다.
-      </p>
-    </>)
+  // {
+  //   id: 7,
+  //   title: 'trello clone',
+  //   img: '',
+  //   code: 'https://github.com/hallokay/trello',
+  //   url: '',
+  //   desc: (<>
+  //     <p>
+  //       현재 작업중인 프로젝트입니다.
+  //     </p>
+  //   </>)
 
-  },
+  // },
   {
     id: 6,
     title: 'NEXT.js server action',
