@@ -169,7 +169,7 @@ export const projects = [
     title: "렌트카 사이트",
     img: '/assets/img/rent-car.jpg',
     code: 'https://github.com/hallokay/car_showcase_next.js',
-    url: '',
+    url: 'https://653129f29908a5044d1d8145--joyful-pudding-efd4e0.netlify.app/',
     desc: (<>
       <p>
         Next.js, tailwind CSS를 이용해 만든 렌트카 렌딩페이지 입니다.
